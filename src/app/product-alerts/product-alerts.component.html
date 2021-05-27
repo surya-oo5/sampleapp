@@ -1,0 +1,10 @@
+<p *ngIf="product && product.price > 700">
+    <button>Notify Me</button>
+    <button (click)="share()">
+        Share
+      </button>
+      
+      <app-product-alerts
+        [product]="product">
+      </app-product-alerts>
+  </p>
