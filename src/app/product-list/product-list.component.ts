@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { product} from '../product';
+import { products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -7,9 +7,12 @@ import { product} from '../product';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = product;
+  products = products;
 
   share() {
     window.alert('The product has been shared!');
+  }
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
   }
 }
